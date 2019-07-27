@@ -22,7 +22,7 @@ s.description      = 'This is a practical screen information class, using it wil
 s.homepage         = 'https://github.com/rendanruju/WJScreenInfo'
 # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
-s.author           = { 'rendanruju' => '952753007@qq.com' }
+s.author           = { 'rendanruju' => '9527530075@qq.com' }
 s.source           = { :git => 'https://github.com/rendanruju/WJScreenInfo.git', :tag => s.version.to_s }
 # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
