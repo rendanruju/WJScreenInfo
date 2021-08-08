@@ -79,6 +79,7 @@ implementationSingleton(WJScreenInfo)
 - (UITabBarController *)tabBarController {
     if (!_tabBarController) {
         _tabBarController = [[UITabBarController alloc] init];
+        NSLog(@"---这是一个测试代码---");
     }
     return _tabBarController;
 }
