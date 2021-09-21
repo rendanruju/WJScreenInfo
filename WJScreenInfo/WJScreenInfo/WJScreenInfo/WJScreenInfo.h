@@ -14,18 +14,18 @@
 
 interfaceSingleton
 
-- (CGRect)frame;
-- (CGFloat)kScreenWidth;
-- (CGFloat)kScreenHeight;
-- (CGFloat)kSafeAreaScreenHeight;
-- (CGFloat)kStatusBarHeight;
-- (CGFloat)kTabBarBottomHeight;
-- (CGFloat)kTabbar_Height;
-- (CGFloat)navigationBarHeight;
-- (CGFloat)kNavi_Height;
-- (CGFloat)scale;
-- (CGFloat)getBorderWidth:(CGFloat)width;
-- (BOOL)widthUnder375;
-- (BOOL)compareSystemVersion:(CGFloat)version;
+- (CGRect)wj_frame;
+- (CGFloat)wj_screenWidth;
+- (CGFloat)wj_screenHeight;
+- (CGFloat)wj_safeAreaScreenHeight;
+- (CGFloat)wj_statusBarHeight;
+- (CGFloat)wj_tabBarBottomHeight;
+- (CGFloat)wj_tabbar_Height;
+- (CGFloat)wj_navigationBarHeight;
+- (CGFloat)wj_navi_Height;
+- (CGFloat)wj_scale;
+- (CGFloat)wj_getBorderWidth:(CGFloat)width;
+- (BOOL)wj_widthUnder375;
+- (BOOL)wj_compareSystemVersion:(CGFloat)version;
 
 @end
