@@ -20,22 +20,22 @@
 implementationSingleton(WJScreenInfo)
 
 #pragma mark - 布局相关属性
-- (CGRect)frame {
+- (CGRect)wj_frame {
     return [UIScreen mainScreen].bounds;
 }
-- (CGFloat)kScreenWidth {
+- (CGFloat)wj_screenWidth {
     return [UIScreen mainScreen].bounds.size.width;
 }
-- (CGFloat)kScreenHeight {
+- (CGFloat)wj_screenHeight {
     return [UIScreen mainScreen].bounds.size.height;
 }
-- (CGFloat)kSafeAreaScreenHeight {
-    return self.kScreenHeight - self.kNavi_Height - self.kTabBarBottomHeight;
+- (CGFloat)wj_safeAreaScreenHeight {
+    return self.wj_screenHeight - self.wj_navi_Height - self.wj_tabBarBottomHeight;
 }
-- (CGFloat)kStatusBarHeight {
+- (CGFloat)wj_statusBarHeight {
     return [UIApplication sharedApplication].statusBarFrame.size.height;
 }
-- (CGFloat)kTabBarBottomHeight {
+- (CGFloat)wj_tabBarBottomHeight {
     if (@available(iOS 11.0, *)) {
         CGFloat height = [UIApplication sharedApplication].delegate.window.safeAreaInsets.bottom;
         return height;
@@ -44,25 +44,25 @@ implementationSingleton(WJScreenInfo)
         return 0.0;
     }
 }
-- (CGFloat)kTabbar_Height {
+- (CGFloat)wj_tabbar_Height {
     return self.tabBarController.tabBar.frame.size.height;
 }
-- (CGFloat)navigationBarHeight {
+- (CGFloat)wj_navigationBarHeight {
     return self.nav.navigationBar.frame.size.height;
 }
-- (CGFloat)kNavi_Height {
-    return self.navigationBarHeight + self.kStatusBarHeight;
+- (CGFloat)wj_navi_Height {
+    return self.wj_navigationBarHeight + self.wj_statusBarHeight;
 }
-- (CGFloat)scale {
-    return self.kScreenWidth / 375;
+- (CGFloat)wj_scale {
+    return self.wj_screenWidth / 375;
 }
-- (CGFloat)getBorderWidth:(CGFloat)width {
+- (CGFloat)wj_getBorderWidth:(CGFloat)width {
     return (width / [UIScreen mainScreen].scale * 2);
 }
-- (BOOL)widthUnder375 {
-    return self.kScreenWidth < 375;
+- (BOOL)wj_widthUnder375 {
+    return self.wj_screenWidth < 375;
 }
-- (BOOL)compareSystemVersion:(CGFloat)version {
+- (BOOL)wj_compareSystemVersion:(CGFloat)version {
     if (UIDevice.currentDevice.systemVersion.doubleValue < version) {
         return YES;
     }else {
