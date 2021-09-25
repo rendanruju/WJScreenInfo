@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WJScreenInfo.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor redColor];
+    
+    NSLog(@"---%f", [[WJScreenInfo sharedInstance] wj_getBorderWidth:0.5]);
 }
 
 
