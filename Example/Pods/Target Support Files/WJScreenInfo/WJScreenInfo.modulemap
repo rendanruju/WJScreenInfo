@@ -1,0 +1,6 @@
+framework module WJScreenInfo {
+  umbrella header "WJScreenInfo-umbrella.h"
+
+  export *
+  module * { export * }
+}

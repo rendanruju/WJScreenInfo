@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'WJScreenInfo_Example' do
+  pod 'WJScreenInfo', :path => '../'
+
+  target 'WJScreenInfo_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

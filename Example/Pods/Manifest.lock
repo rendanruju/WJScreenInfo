@@ -1,0 +1,16 @@
+PODS:
+  - WJScreenInfo (0.1.0)
+
+DEPENDENCIES:
+  - WJScreenInfo (from `../`)
+
+EXTERNAL SOURCES:
+  WJScreenInfo:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WJScreenInfo: b57e6c3bce7d623b394c821db61474134e04424f
+
+PODFILE CHECKSUM: d370ce11e33eff0750818b3681015e2be91b1fc4
+
+COCOAPODS: 1.10.2
